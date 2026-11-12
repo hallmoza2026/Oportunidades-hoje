@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import { config } from '../lib/data.js';
+const corpo = encodeURIComponent('Ligação da vaga neste site:\n\nPorque pede a remoção:\n\nO seu cargo ou relação com o anúncio:');
+---
+<Base title="Pedir remoção de anúncio" description="Como pedir que um anúncio seja retirado do site." path="/remocao/">
+  <h1>Pedir remoção de anúncio</h1>
+  <div class="prosa">
+    <p>Se publicou um anúncio que aparece aqui e quer que o retiremos, envie-nos a ligação da vaga neste site e diga porque pede a remoção.</p>
+    <p><a class="btn btn-principal" href={`mailto:${config.email}?subject=${encodeURIComponent('Pedido de remoção de anúncio')}&body=${corpo}`}>Enviar pedido por e-mail</a></p>
+    <p>Respondemos o mais depressa possível. Se a vaga já foi fechada na fonte, deixa de aparecer na actualização seguinte.</p>
+  </div>
+</Base>

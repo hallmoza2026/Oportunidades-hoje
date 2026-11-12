@@ -1,0 +1,24 @@
+{
+  "nome": "Vagas Hoje",
+  "slogan": "Oportunidades de emprego em Moçambique e vagas remotas, num só lugar",
+  "url": "https://vagas-hoje.pages.dev",
+  "idioma": "pt-MZ",
+  "paisFoco": "Moçambique",
+  "email": "contacto@vagas-hoje.example",
+  "redes": { "facebook": "", "linkedin": "", "whatsappCanal": "" },
+  "analytics": { "cloudflareToken": "" },
+  "adsense": { "activo": false, "cliente": "" },
+  "newsletter": { "url": "" },
+  "formularioPublicar": { "action": "", "nota": "Configure o endpoint (Formspree, Web3Forms) para activar o formulário." },
+  "categorias": [
+    { "slug": "tecnologia", "nome": "Tecnologia" },
+    { "slug": "administracao-financas", "nome": "Administração e Finanças" },
+    { "slug": "vendas-marketing", "nome": "Vendas e Marketing" },
+    { "slug": "saude", "nome": "Saúde" },
+    { "slug": "educacao", "nome": "Educação" },
+    { "slug": "engenharia-construcao", "nome": "Engenharia e Construção" },
+    { "slug": "ong-humanitario", "nome": "ONG e Humanitário" },
+    { "slug": "outras", "nome": "Outras" }
+  ],
+  "diasValidade": 45
+}

@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import { config } from '../lib/data.js';
+const action = config.formularioPublicar?.action;
+---
+<Base title="Publicar vaga" description="Divulgue a sua vaga de emprego gratuitamente. Analisamos cada envio antes de publicar." path="/publicar/">
+  <h1>Publicar uma vaga</h1>
+  <div class="prosa">
+    <p>Envie os dados da vaga. Lemos cada envio antes de publicar e não aceitamos vagas que peçam dinheiro aos candidatos.</p>
+    <p>A vaga precisa de uma ligação (link) onde as pessoas se possam candidatar.</p>
+  </div>
+  {action ? (
+    <form method="POST" action={action} class="prosa">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
+      <div class="campo"><label for="titulo">Cargo</label><input id="titulo" name="titulo" required /></div>
+      <div class="campo"><label for="empresa">Empresa ou organização</label><input id="empresa" name="empresa" required /></div>
+      <div class="campo"><label for="local">Cidade e país</label><input id="local" name="local" placeholder="Maputo, Moçambique" /></div>
+      <div class="campo"><label for="tipo">Tipo de contrato</label>
+        <select id="tipo" name="tipo"><option>Tempo inteiro</option><option>Tempo parcial</option><option>Estágio</option><option>Consultoria</option><option>Contrato a prazo</option></select></div>
+      <div class="campo"><label for="descricao">Descrição da vaga</label><textarea id="descricao" name="descricao" rows="8" required></textarea><small>Funções, requisitos e prazo de candidatura.</small></div>
+      <div class="campo"><label for="url">Ligação para candidatura</label><input id="url" name="url" type="url" required placeholder="https://" /></div>
+      <div class="campo"><label for="email">O seu e-mail</label><input id="email" name="email" type="email" required /><small>Só o usamos para falar sobre este envio.</small></div>
+      <button class="btn btn-principal" type="submit">Enviar vaga para análise</button>
+    </form>
+  ) : (
+    <p class="nota">O formulário ainda não está activo. Para divulgar uma vaga, escreva para <a href={`mailto:${config.email}?subject=Publicar vaga`}>{config.email}</a> com cargo, empresa, local, descrição e a ligação para candidatura.</p>
+  )}
+</Base>

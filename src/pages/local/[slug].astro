@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import JobList from '../../components/JobList.astro';
+import { config, jobs, slugify } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  // Garante sempre a página de Moçambique, mesmo sem vagas (é a página do foco do site).
+  const nomes = new Set([config.paisFoco, ...jobs.map((j) => j.pais).filter((p) => p !== 'Remoto' && p !== 'Outro')]);
+  return [...nomes].map((nome) => ({ params: { slug: slugify(nome) }, props: { nome, lista: jobs.filter((j) => j.pais === nome) } }));
+}
+const { nome, lista } = Astro.props;
+---
+<Base title={`Vagas em ${nome}`} description={`Vagas de emprego em ${nome}. ${lista.length} anúncios.`} path={`/local/${Astro.params.slug}/`}>
+  <h1>Vagas em {nome}</h1>
+  <p class="contagem">{lista.length} {lista.length === 1 ? 'vaga' : 'vagas'}</p>
+  <JobList jobs={lista} vazioTexto={`Não há vagas em ${nome} neste momento. Tem uma vaga para divulgar? Use “Publicar vaga”.`} />
+</Base>

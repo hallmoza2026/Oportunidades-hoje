@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import JobList from '../components/JobList.astro';
+import { jobs } from '../lib/data.js';
+const lista = jobs.filter((j) => j.remoto);
+---
+<Base title="Vagas remotas" description={`Vagas de trabalho remoto abertas a candidatos de vários países. ${lista.length} anúncios.`} path="/remoto/">
+  <h1>Vagas remotas</h1>
+  <p class="contagem">{lista.length} {lista.length === 1 ? 'vaga' : 'vagas'}. Confirme no anúncio se aceitam candidatos do seu país.</p>
+  <JobList jobs={lista} vazioTexto="Não há vagas remotas neste momento." />
+</Base>

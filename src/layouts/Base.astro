@@ -1,0 +1,75 @@
+---
+import '../styles/global.css';
+import { config, meta, abs } from '../lib/data.js';
+
+const { title, description = config.slogan, path = '/', jsonld = null, noindex = false, home = false } = Astro.props;
+const fullTitle = home ? `${config.nome}: ${config.slogan}` : `${title} | ${config.nome}`;
+const canonical = abs(path);
+const og = abs('/og.png');
+const nav = [
+  ['/', 'Início'],
+  ['/remoto/', 'Remotas'],
+  ['/local/mocambique/', 'Moçambique'],
+  ['/blog/', 'Blog'],
+  ['/publicar/', 'Publicar'],
+];
+const current = Astro.url.pathname;
+const token = config.analytics?.cloudflareToken;
+---
+<!doctype html>
+<html lang={config.idioma}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content="#0e3b43" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title={`${config.nome}: novas vagas`} href="/rss.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={config.nome} />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={og} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={og} />
+    {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
+    {token && <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token })}></script>}
+  </head>
+  <body>
+    <a class="sr-only" href="#conteudo">Saltar para o conteúdo</a>
+    {meta.exemplo && <div class="aviso-exemplo" role="status">Dados de exemplo para teste. Estas vagas não são reais.</div>}
+    <header class="topo">
+      <div class="wrap">
+        <a class="marca" href="/">{config.nome}</a>
+        <nav class="menu" aria-label="Principal">
+          {nav.map(([href, label]) => <a href={href} aria-current={current === href ? 'page' : undefined}>{label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <div class="capulana" aria-hidden="true"></div>
+    <main id="conteudo"><div class="wrap"><slot /></div></main>
+    <footer class="rodape">
+      <div class="wrap">
+        <nav aria-label="Informação">
+          <a href="/recentes/">Vagas recentes</a>
+          <a href="/sobre/">Sobre</a>
+          <a href="/contacto/">Contacto</a>
+          <a href="/privacidade/">Privacidade</a>
+          <a href="/termos/">Termos de uso</a>
+          <a href="/remocao/">Pedir remoção de anúncio</a>
+          <a href="/rss.xml">RSS</a>
+        </nav>
+        <p>Reunimos anúncios de outros sites. A candidatura faz-se sempre no anúncio original.</p>
+        <p>© {new Date().getFullYear()} {config.nome}</p>
+      </div>
+    </footer>
+  </body>
+</html>

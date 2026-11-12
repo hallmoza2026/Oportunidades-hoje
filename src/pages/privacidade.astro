@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { config } from '../lib/data.js';
+---
+<Base title="Política de privacidade" description={`Que dados o ${config.nome} recolhe e como são usados.`} path="/privacidade/">
+  <h1>Política de privacidade</h1>
+  <div class="prosa">
+    <p><em>Texto-modelo. Reveja-o com um profissional jurídico antes de activar anúncios, newsletter ou análise de visitas.</em></p>
+    <h2>O que recolhemos</h2>
+    <p>Ao navegar neste site não usamos cookies de rastreio e não pedimos conta. Se activarmos estatísticas de visitas, usaremos uma ferramenta sem cookies e indicaremos aqui qual.</p>
+    <h2>Formulário Publicar vaga</h2>
+    <p>Se enviar uma vaga, recebemos os dados que escrever (cargo, empresa, descrição, ligação e o seu e-mail). Usamo-los apenas para analisar e publicar a vaga e para falar consigo sobre ela. O envio é tratado por um serviço de formulários externo.</p>
+    <h2>Ligações externas</h2>
+    <p>Cada vaga leva a um site de terceiros. Esses sites têm as suas próprias regras de privacidade, que não controlamos.</p>
+    <h2>Os seus direitos</h2>
+    <p>Pode pedir-nos o acesso, a correcção ou a eliminação dos dados que nos enviou, escrevendo para <a href={`mailto:${config.email}`}>{config.email}</a>.</p>
+  </div>
+</Base>

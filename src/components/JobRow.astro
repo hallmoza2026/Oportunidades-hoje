@@ -1,0 +1,16 @@
+---
+import { categoriaNome, fmtDataCurta } from '../lib/data.js';
+const { job } = Astro.props;
+const texto = `${job.titulo} ${job.empresa} ${job.local} ${job.pais}`.toLowerCase();
+---
+<li class="vaga" data-texto={texto} data-cat={job.categoria} data-pais={job.pais} data-remoto={job.remoto ? '1' : '0'}>
+  <a class="titulo" href={`/vagas/${job.slug}/`}>{job.titulo}</a>
+  <time datetime={job.dataPublicacao}>{fmtDataCurta(job.dataPublicacao)}</time>
+  <p class="empresa">{job.empresa}</p>
+  <ul class="detalhes">
+    {job.local && <li>{job.local}</li>}
+    {job.remoto && <li class="etiqueta">Remoto</li>}
+    {job.tipo && <li>{job.tipo}</li>}
+    <li>{categoriaNome(job.categoria)}</li>
+  </ul>
+</li>

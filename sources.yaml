@@ -1,0 +1,51 @@
+# Fontes de vagas. Cada fonte falha de forma isolada.
+# Campos: id, nome, tipo (remotive | rss | manual), url, atribuicao, activa
+# Restrições verificadas nos termos de cada fonte (ver "notas"):
+#   atrasoHoras      -> só mostrar vagas com mais de N horas
+#   intervaloMinHoras-> não consultar a fonte mais vezes do que isto
+#   googleJobs       -> false = NÃO emitir JSON-LD JobPosting (a fonte proíbe)
+#   proibeCaptacao   -> true  = não mostrar newsletter/recolha de e-mails junto destas vagas
+
+sources:
+  - id: remotive
+    nome: Remotive
+    tipo: remotive
+    url: https://remotive.com/api/remote-jobs
+    atribuicao: { texto: "Vagas remotas por Remotive", link: "https://remotive.com" }
+    activa: true
+    atrasoHoras: 24
+    intervaloMinHoras: 6
+    googleJobs: false
+    proibeCaptacao: true
+    notas: "Termos (remotive.com/remote-jobs/api): link para o anúncio, citar a fonte, atraso de 24 h, máx. ~4 consultas/dia, proibido reenviar para Google Jobs/LinkedIn/Jooble, proibido usar as vagas para captar e-mails."
+
+  - id: reliefweb
+    nome: ReliefWeb
+    tipo: rss
+    url: ""            # preencher com o feed RSS/API depois de registar o appname
+    atribuicao: { texto: "Vagas via ReliefWeb", link: "https://reliefweb.int" }
+    activa: false
+    intervaloMinHoras: 6
+    googleJobs: false
+    proibeCaptacao: false
+    notas: "A API v2 exige um appname pré-aprovado (pedido por formulário em apidoc.reliefweb.int). Os termos limitam a reutilização de conteúdo. Ler antes de activar."
+
+  - id: arbeitnow
+    nome: Arbeitnow
+    tipo: remotive-compat
+    url: https://www.arbeitnow.com/api/job-board-api
+    atribuicao: { texto: "Vagas via Arbeitnow", link: "https://www.arbeitnow.com" }
+    activa: false
+    googleJobs: false
+    proibeCaptacao: false
+    notas: "Sem chave. Foco na Europa/remoto, pouca relevância para Moçambique. Os campos não estão documentados na página oficial; confirmar na documentação Postman antes de escrever o adaptador."
+
+  - id: manual
+    nome: Submissões
+    tipo: manual
+    url: data/manual-jobs.json
+    atribuicao: { texto: "Enviada por utilizador/empresa", link: "" }
+    activa: true
+    googleJobs: true
+    proibeCaptacao: false
+    notas: "Vagas aprovadas à mão a partir do formulário Publicar vaga."

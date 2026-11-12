@@ -1,0 +1,62 @@
+---
+import Base from '../../layouts/Base.astro';
+import JobList from '../../components/JobList.astro';
+import { config, jobs, fonteDe, categoriaNome, fmtData, jobPostingLd, abs } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return jobs.map((job) => ({ params: { slug: job.slug }, props: { job } }));
+}
+const { job } = Astro.props;
+const fonte = fonteDe(job);
+const similares = jobs.filter((j) => j.categoria === job.categoria && j.id !== job.id).slice(0, 3);
+const url = abs(`/vagas/${job.slug}/`);
+const msg = encodeURIComponent(`${job.titulo} em ${job.empresa}: ${url}`);
+const denuncia = `mailto:${config.email}?subject=${encodeURIComponent('Denúncia de vaga: ' + job.titulo)}&body=${encodeURIComponent(url)}`;
+const ld = jobPostingLd(job);
+const textoCompleto = !!job.descricao;
+---
+<Base title={`${job.titulo} em ${job.empresa}`} description={job.resumo.slice(0, 155)} path={`/vagas/${job.slug}/`} jsonld={ld}>
+  <p class="migalhas"><a href="/">Vagas</a> / <a href={`/categoria/${job.categoria}/`}>{categoriaNome(job.categoria)}</a></p>
+  <article>
+    <header class="vaga-cabeca">
+      <h1>{job.titulo}</h1>
+      <p><strong>{job.empresa}</strong></p>
+    </header>
+    <dl class="ficha">
+      {job.local && <div><dt>Local</dt><dd>{job.local}</dd></div>}
+      <div><dt>Modalidade</dt><dd>{job.remoto ? 'Remoto' : 'Presencial'}</dd></div>
+      {job.tipo && <div><dt>Tipo</dt><dd>{job.tipo}</dd></div>}
+      <div><dt>Categoria</dt><dd>{categoriaNome(job.categoria)}</dd></div>
+      <div><dt>Publicada em</dt><dd>{fmtData(job.dataPublicacao)}</dd></div>
+      <div><dt>Fonte</dt><dd>{fonte.nome}</dd></div>
+    </dl>
+
+    <p class="texto-vaga">{job.descricao ?? job.resumo}</p>
+    {!textoCompleto && <p class="nota">Isto é só um resumo. O anúncio completo, os requisitos e a forma de candidatura estão no site de origem.</p>}
+
+    <p><a class="btn btn-principal" href={job.urlOriginal} rel="noopener nofollow" target="_blank">Ver anúncio original na {fonte.nome}</a></p>
+    {fonte.atribuicao?.link
+      ? <p class="denunciar"><a href={fonte.atribuicao.link} rel="noopener">{fonte.atribuicao.texto}</a></p>
+      : <p class="denunciar">{fonte.atribuicao?.texto}</p>}
+
+    <p class="nota nota-seguranca"><strong>Nunca pague para se candidatar.</strong> Nenhum empregador legítimo pede dinheiro, taxas ou transferências para considerar a sua candidatura.</p>
+
+    <div class="partilha">
+      <a class="btn btn-sec btn-pequeno" href={`https://wa.me/?text=${msg}`} rel="noopener" target="_blank">Partilhar no WhatsApp</a>
+      <a class="btn btn-sec btn-pequeno" href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`} rel="noopener" target="_blank">Facebook</a>
+      <a class="btn btn-sec btn-pequeno" href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`} rel="noopener" target="_blank">LinkedIn</a>
+      <button class="btn btn-sec btn-pequeno" type="button" id="copiar" data-url={url}>Copiar ligação</button>
+    </div>
+    <p class="denunciar"><a href={denuncia}>Denunciar esta vaga</a></p>
+  </article>
+
+  {similares.length > 0 && <section aria-labelledby="sim"><h2 id="sim">Vagas semelhantes</h2><JobList jobs={similares} /></section>}
+
+  <script is:inline>
+    var b = document.getElementById('copiar');
+    if (b) b.addEventListener('click', function () {
+      var u = b.dataset.url;
+      (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(function () { b.textContent = 'Ligação copiada'; }, function () { window.prompt('Copie a ligação:', u); });
+    });
+  </script>
+</Base>

@@ -1,0 +1,133 @@
+:root {
+  --tinta: #0e3b43;
+  --fundo: #f2f6f7;
+  --papel: #ffffff;
+  --texto: #14262b;
+  --suave: #4d6469;
+  --linha: #d3dfe1;
+  --girassol: #f2b705;
+  --girassol-texto: #1a1400;
+  --verde: #1f7a4d;
+  --alerta: #b3261e;
+  --serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --gutter: 16px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tinta: #7fd0d9;
+    --fundo: #0b1f24;
+    --papel: #11292f;
+    --texto: #e6f1f2;
+    --suave: #9db7bb;
+    --linha: #24444b;
+    --verde: #4cc58a;
+    --alerta: #ff8a80;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--fundo); color: var(--texto);
+  font: 17px/1.55 var(--sans);
+}
+a { color: var(--tinta); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--girassol); outline-offset: 2px; border-radius: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 var(--gutter); }
+h1, h2, h3 { font-family: var(--serif); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 .5em; }
+h1 { font-size: clamp(1.9rem, 6vw, 2.6rem); }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.1rem; }
+
+/* Faixa de capulana: o único elemento decorativo, feito só com gradientes */
+.capulana {
+  height: 12px;
+  background:
+    repeating-linear-gradient(90deg, var(--girassol) 0 18px, #0e3b43 18px 30px, #1f7a4d 30px 44px, #b3261e 44px 52px, #f2f6f7 52px 60px);
+}
+
+.topo { background: var(--papel); border-bottom: 1px solid var(--linha); }
+.topo .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 20px; padding-top: 12px; padding-bottom: 12px; }
+.marca { font: 700 1.35rem var(--serif); color: var(--tinta); text-decoration: none; margin-right: auto; }
+.menu { display: flex; flex-wrap: wrap; gap: 0 14px; font-size: .9rem; }
+.menu a { color: var(--texto); text-decoration: none; padding: 4px 0; min-height: 44px; display: inline-flex; align-items: center; }
+.menu a:hover, .menu a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; }
+
+.aviso-exemplo { background: #b3261e; color: #fff; padding: 10px var(--gutter); text-align: center; font-weight: 600; }
+
+main { padding: 28px 0 56px; min-height: 60vh; }
+.hero { padding-bottom: 8px; }
+.hero p { color: var(--suave); max-width: 52ch; margin: 0 0 18px; }
+
+/* Pesquisa */
+.pesquisa { display: grid; gap: 10px; margin-bottom: 8px; }
+.pesquisa input[type="search"], .pesquisa select, .campo input, .campo select, .campo textarea {
+  width: 100%; min-height: 48px; padding: 10px 12px; font: inherit; color: var(--texto);
+  background: var(--papel); border: 2px solid var(--linha); border-radius: 6px;
+}
+.pesquisa input[type="search"] { border-color: var(--tinta); font-size: 1.05rem; }
+.filtros { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.remoto-check { display: flex; align-items: center; gap: 10px; min-height: 44px; }
+.remoto-check input { width: 22px; height: 22px; accent-color: var(--verde); }
+.contagem { color: var(--suave); margin: 14px 0 4px; font-size: .95rem; }
+
+/* Lista de vagas em linhas */
+.lista { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--tinta); }
+.vaga { border-bottom: 1px solid var(--linha); display: grid; grid-template-columns: 1fr auto; gap: 2px 14px; padding: 16px 0; }
+.vaga[hidden] { display: none; }
+.vaga a.titulo { grid-column: 1; font: 700 1.15rem/1.25 var(--serif); color: var(--texto); text-decoration: none; }
+.vaga a.titulo:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+.vaga time { grid-column: 2; grid-row: 1; font-size: .85rem; color: var(--suave); white-space: nowrap; padding-top: 3px; }
+.vaga .empresa { grid-column: 1 / -1; margin: 0; color: var(--texto); }
+.vaga .detalhes { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 2px 0 0; padding: 0; list-style: none; color: var(--suave); font-size: .92rem; }
+.etiqueta { color: var(--verde); font-weight: 700; }
+.vazio { padding: 28px 0; }
+.vazio p { margin: 0 0 8px; }
+
+/* Botões */
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 12px 22px; border-radius: 6px; font: 700 1.05rem var(--sans); text-decoration: none; border: 2px solid transparent; cursor: pointer; }
+.btn-principal { background: var(--girassol); color: var(--girassol-texto); border-color: var(--girassol); }
+.btn-principal:hover { filter: brightness(.95); }
+.btn-sec { background: transparent; color: var(--tinta); border-color: var(--tinta); }
+.btn-pequeno { min-height: 44px; padding: 8px 14px; font-size: .95rem; }
+
+/* Página de vaga */
+.migalhas { font-size: .9rem; color: var(--suave); margin-bottom: 14px; }
+.vaga-cabeca p { margin: 0 0 4px; }
+.ficha { display: grid; gap: 6px; margin: 18px 0; padding: 14px 0; border-top: 1px solid var(--linha); border-bottom: 1px solid var(--linha); }
+.ficha div { display: flex; justify-content: space-between; gap: 16px; }
+.ficha dt { color: var(--suave); }
+.ficha dd { margin: 0; text-align: right; font-weight: 600; }
+.texto-vaga { white-space: pre-line; }
+.nota { border-left: 4px solid var(--girassol); padding: 10px 14px; background: var(--papel); margin: 20px 0; }
+.nota-seguranca { border-left-color: var(--alerta); }
+.partilha { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+.denunciar { font-size: .9rem; }
+
+/* Formulários */
+.campo { display: grid; gap: 6px; margin-bottom: 16px; }
+.campo label { font-weight: 600; }
+.campo small { color: var(--suave); }
+
+/* Texto corrido */
+.prosa { max-width: 62ch; }
+.prosa h2 { margin-top: 1.6em; }
+.prosa li { margin-bottom: .4em; }
+.posts { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--tinta); }
+.posts li { padding: 16px 0; border-bottom: 1px solid var(--linha); }
+.posts h2 { font-size: 1.2rem; margin: 0 0 4px; }
+.posts p { margin: 0; color: var(--suave); }
+
+.rodape { border-top: 1px solid var(--linha); background: var(--papel); padding: 28px 0; font-size: .95rem; color: var(--suave); }
+.rodape nav { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 12px; }
+.rodape a { color: var(--texto); min-height: 44px; display: inline-flex; align-items: center; }
+.rodape p { margin: 0 0 6px; }
+
+@media (min-width: 640px) {
+  .pesquisa { grid-template-columns: 1fr; }
+  .filtros { grid-template-columns: 1fr 1fr auto; align-items: center; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }

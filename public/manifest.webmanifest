@@ -1,0 +1,13 @@
+{
+  "name": "Vagas Hoje",
+  "short_name": "Vagas Hoje",
+  "description": "Oportunidades de emprego em Moçambique e vagas remotas",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2f6f7",
+  "theme_color": "#0e3b43",
+  "lang": "pt-MZ",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

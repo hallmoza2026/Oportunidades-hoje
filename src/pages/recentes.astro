@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import JobList from '../components/JobList.astro';
+import { jobs } from '../lib/data.js';
+const lista = jobs.slice(0, 30);
+---
+<Base title="Vagas recentes" description="As vagas de emprego mais recentes." path="/recentes/">
+  <h1>Vagas recentes</h1>
+  <p class="contagem">As {lista.length} mais recentes.</p>
+  <JobList jobs={lista} />
+</Base>

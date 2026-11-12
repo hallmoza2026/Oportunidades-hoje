@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import JobList from '../components/JobList.astro';
+import { config, jobs, paises, categoriasUsadas } from '../lib/data.js';
+---
+<Base home path="/" description={`${config.slogan}. Pesquise vagas e candidate-se no anúncio original.`}>
+  <section class="hero">
+    <h1>Vagas de emprego em Moçambique e remotas</h1>
+    <p>Reunimos anúncios de várias fontes. Pesquise, escolha e candidate-se no site de quem publicou.</p>
+    <form class="pesquisa" role="search" id="filtros" onsubmit="return false">
+      <label class="sr-only" for="q">Pesquisar vagas</label>
+      <input id="q" type="search" placeholder="Cargo, empresa ou cidade" autocomplete="off" />
+      <div class="filtros">
+        <div>
+          <label class="sr-only" for="cat">Categoria</label>
+          <select id="cat">
+            <option value="">Categoria</option>
+            {categoriasUsadas.map((c) => <option value={c.slug}>{c.nome}</option>)}
+          </select>
+        </div>
+        <div>
+          <label class="sr-only" for="pais">Local</label>
+          <select id="pais">
+            <option value="">Local</option>
+            {paises.map((p) => <option value={p.nome}>{p.nome}</option>)}
+          </select>
+        </div>
+        <label class="remoto-check"><input type="checkbox" id="rem" /> Só remotas</label>
+      </div>
+    </form>
+  </section>
+
+  <p class="contagem" id="contagem" aria-live="polite">{jobs.length} vagas</p>
+  <JobList jobs={jobs} vazioTexto="Ainda não há vagas publicadas. Volte em breve." />
+  <div class="vazio" id="sem-resultados" hidden>
+    <p><strong>Nenhuma vaga corresponde à pesquisa.</strong></p>
+    <p>Apague uma palavra ou limpe os filtros de categoria e local.</p>
+  </div>
+
+  <script is:inline>
+    (function () {
+      var q = document.getElementById('q'), cat = document.getElementById('cat'),
+          pais = document.getElementById('pais'), rem = document.getElementById('rem'),
+          cont = document.getElementById('contagem'), vazio = document.getElementById('sem-resultados');
+      var rows = Array.prototype.slice.call(document.querySelectorAll('.vaga'));
+      function aplicar() {
+        var t = q.value.trim().toLowerCase(), n = 0;
+        rows.forEach(function (r) {
+          var ok = (!t || r.dataset.texto.indexOf(t) > -1) && (!cat.value || r.dataset.cat === cat.value) &&
+                   (!pais.value || r.dataset.pais === pais.value) && (!rem.checked || r.dataset.remoto === '1');
+          r.hidden = !ok; if (ok) n++;
+        });
+        cont.textContent = n + (n === 1 ? ' vaga' : ' vagas');
+        vazio.hidden = n !== 0;
+      }
+      [q, cat, pais, rem].forEach(function (el) { el.addEventListener('input', aplicar); el.addEventListener('change', aplicar); });
+    })();
+  </script>
+</Base>

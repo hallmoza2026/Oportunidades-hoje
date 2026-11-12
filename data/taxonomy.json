@@ -1,0 +1,17 @@
+{
+  "categorias": {
+    "tecnologia": ["developer", "engineer", "software", "devops", "data", "programador", "informática", "frontend", "backend", "sysadmin"],
+    "administracao-financas": ["account", "finance", "financ", "contab", "admin", "auditor", "secretári", "recursos humanos", "hr"],
+    "vendas-marketing": ["sales", "marketing", "vendas", "comercial", "seo", "content", "social media", "customer"],
+    "saude": ["médic", "enfermeir", "saúde", "health", "nurse", "farmac", "clinical"],
+    "educacao": ["professor", "teacher", "educa", "docente", "tutor", "formador"],
+    "engenharia-construcao": ["engenheiro civil", "construção", "civil", "mecânic", "electric", "obra"],
+    "ong-humanitario": ["ngo", "ong", "humanit", "unicef", "undp", "wfp", "programme", "protection", "relief"]
+  },
+  "paises": {
+    "Moçambique": ["moçambique", "mozambique", "maputo", "matola", "beira", "nampula", "pemba", "tete", "quelimane", "xai-xai", "inhambane"],
+    "Angola": ["angola", "luanda"],
+    "Portugal": ["portugal", "lisboa", "porto"],
+    "Brasil": ["brasil", "brazil", "são paulo"]
+  }
+}

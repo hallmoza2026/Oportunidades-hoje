@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import { config } from '../lib/data.js';
+---
+<Base title="Termos de uso" description={`Regras de utilização do ${config.nome}.`} path="/termos/">
+  <h1>Termos de uso</h1>
+  <div class="prosa">
+    <p><em>Texto-modelo. Reveja-o com um profissional jurídico antes de monetizar o site.</em></p>
+    <h2>O que é este site</h2>
+    <p>O {config.nome} apresenta resumos de anúncios publicados por terceiros e liga ao anúncio original. Não somos parte na relação entre candidatos e empregadores.</p>
+    <h2>Sem garantias</h2>
+    <p>Não garantimos que as vagas estejam abertas, correctas ou sejam legítimas. Confirme sempre os dados no anúncio original antes de enviar documentos pessoais.</p>
+    <h2>Proteja-se de burlas</h2>
+    <p>Nunca pague para se candidatar nem partilhe dados bancários. Denuncie vagas suspeitas.</p>
+    <h2>Conteúdo de terceiros</h2>
+    <p>Os anúncios pertencem às respectivas fontes e empresas. Se é o titular e quer a remoção, use <a href="/remocao/">Pedir remoção de anúncio</a>.</p>
+    <h2>Vagas enviadas por utilizadores</h2>
+    <p>Quem envia uma vaga declara ter o direito de a divulgar. Podemos recusar ou retirar qualquer vaga.</p>
+  </div>
+</Base>

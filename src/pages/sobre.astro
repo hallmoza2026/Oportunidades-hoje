@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import { config, sources } from '../lib/data.js';
+const fontes = Object.values(sources).filter((s) => s.activa && s.atribuicao?.link);
+---
+<Base title="Sobre" description={`O que é o ${config.nome} e de onde vêm as vagas.`} path="/sobre/">
+  <h1>Sobre o {config.nome}</h1>
+  <div class="prosa">
+    <p>O {config.nome} reúne anúncios de emprego de vários sites num só lugar, com foco em {config.paisFoco} e em vagas remotas. Não somos empregadores nem agência de recrutamento.</p>
+    <h2>Como funciona</h2>
+    <p>Mostramos um resumo de cada vaga e a fonte. Para ler o anúncio completo e candidatar-se, abre-se o site de origem. Não recebemos candidaturas.</p>
+    <h2>De onde vêm as vagas</h2>
+    <ul>
+      {fontes.map((s) => <li><a href={s.atribuicao.link} rel="noopener">{s.nome}</a></li>)}
+      <li>Vagas enviadas por empresas através de <a href="/publicar/">Publicar vaga</a></li>
+    </ul>
+    <h2>Segurança</h2>
+    <p>Nunca pague para se candidatar. Se vir uma vaga suspeita, use “Denunciar esta vaga” na página dela.</p>
+    <p>Se é o autor de um anúncio e quer que o retiremos, veja <a href="/remocao/">Pedir remoção de anúncio</a>.</p>
+  </div>
+</Base>

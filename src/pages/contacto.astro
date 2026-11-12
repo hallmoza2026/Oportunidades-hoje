@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { config } from '../lib/data.js';
+---
+<Base title="Contacto" description={`Fale com a equipa do ${config.nome}.`} path="/contacto/">
+  <h1>Contacto</h1>
+  <div class="prosa">
+    <p>Escreva-nos para <a href={`mailto:${config.email}`}>{config.email}</a>.</p>
+    <ul>
+      <li>Para divulgar uma vaga, use <a href="/publicar/">Publicar vaga</a>.</li>
+      <li>Para retirar um anúncio, use <a href="/remocao/">Pedir remoção</a>.</li>
+      <li>Para denunciar uma vaga suspeita, use a ligação “Denunciar esta vaga” na página da vaga.</li>
+    </ul>
+  </div>
+</Base>

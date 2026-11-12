@@ -1,0 +1,7 @@
+---
+import JobRow from './JobRow.astro';
+const { jobs, vazioTexto = 'Ainda não há vagas nesta lista.' } = Astro.props;
+---
+{jobs.length === 0
+  ? <div class="vazio"><p>{vazioTexto}</p><p><a href="/">Ver todas as vagas</a></p></div>
+  : <ul class="lista">{jobs.map((j) => <JobRow job={j} />)}</ul>}

@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import { posts } from '../../lib/posts.js';
+import { fmtData, config, abs } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return posts.map((p) => ({ params: { slug: p.slug }, props: { post: p } }));
+}
+const { post } = Astro.props;
+const Content = post.Content;
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.title,
+  description: post.description,
+  datePublished: new Date(post.date).toISOString(),
+  mainEntityOfPage: abs(`/blog/${post.slug}/`),
+  publisher: { '@type': 'Organization', name: config.nome },
+};
+---
+<Base title={post.title} description={post.description} path={`/blog/${post.slug}/`} jsonld={ld}>
+  <p class="migalhas"><a href="/blog/">Blog</a></p>
+  <article class="prosa">
+    <h1>{post.title}</h1>
+    <p><time datetime={post.date}>{fmtData(post.date)}</time></p>
+    <Content />
+  </article>
+  <p><a class="btn btn-principal" href="/">Ver vagas abertas</a></p>
+</Base>

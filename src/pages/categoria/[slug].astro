@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import JobList from '../../components/JobList.astro';
+import { config, jobs } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return config.categorias.map((c) => ({ params: { slug: c.slug }, props: { cat: c, lista: jobs.filter((j) => j.categoria === c.slug) } }));
+}
+const { cat, lista } = Astro.props;
+---
+<Base title={`Vagas de ${cat.nome}`} description={`Vagas de emprego na área de ${cat.nome}. ${lista.length} anúncios.`} path={`/categoria/${cat.slug}/`}>
+  <h1>Vagas de {cat.nome}</h1>
+  <p class="contagem">{lista.length} {lista.length === 1 ? 'vaga' : 'vagas'}</p>
+  <JobList jobs={lista} vazioTexto={`Não há vagas de ${cat.nome} neste momento.`} />
+</Base>
