@@ -1,0 +1,52 @@
+name: Atualizar vagas
+
+on:
+  schedule:
+    # A cada 6 horas. Não diminuir: a Remotive aceita no máximo ~4 consultas por dia.
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-jobs
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Recolher vagas das fontes
+        run: node scripts/ingest.mjs
+        env:
+          RELIEFWEB_APPNAME: ${{ secrets.RELIEFWEB_APPNAME }}
+
+      - name: Construir e verificar (não publica se falhar)
+        run: |
+          npm run build
+          npm run check
+        env:
+          CI: "1"
+
+      - name: Guardar vagas actualizadas
+        run: |
+          git config user.name "vagas-bot"
+          git config user.email "vagas-bot@users.noreply.github.com"
+          git add data/jobs.json
+          if git diff --cached --quiet; then
+            echo "Sem alterações."
+          else
+            git commit -m "chore: atualizar vagas"
+            git push
+          fi
