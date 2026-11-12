@@ -1,18 +1,37 @@
 {
  "meta": {
-  "geradoEm": "2026-11-12T13:32:32.466Z",
+  "geradoEm": "2026-11-12T19:14:56.024Z",
   "exemplo": false,
   "total": 14,
   "fontes": {
    "remotive": {
-    "ultimaConsulta": "2026-11-12T13:32:32.466Z"
+    "ultimaConsulta": "2026-11-12T19:14:56.024Z"
    },
    "manual": {
-    "ultimaConsulta": "2026-11-12T13:32:32.466Z"
+    "ultimaConsulta": "2026-11-12T19:14:56.024Z"
    }
   }
  },
  "jobs": [
+  {
+   "id": "remotive-ddadc5e023",
+   "slug": "customer-service-representative-shyftoff-c5e023",
+   "titulo": "Customer Service Representative",
+   "empresa": "ShyftOff",
+   "local": "USA",
+   "pais": "Remoto",
+   "remoto": true,
+   "tipo": "Contrato",
+   "categoria": "vendas-marketing",
+   "resumo": "ShyftOff connects independent customer service professionals with opportunities to support leading brands across industries like healthcare, financial services, insurance, retail, and technology. As an independent agent on the ShyftOff platform, you'll have opportunities to help customers answer…",
+   "urlOriginal": "https://remotive.com/remote-jobs/customer-service/customer-service-representative-2091171",
+   "fonte": "remotive",
+   "dataPublicacao": "2026-11-11T09:11:58.000Z",
+   "validoAte": "2026-12-26T09:11:58.000Z",
+   "dedupKey": "00b885ae49",
+   "primeiraVez": "2026-11-12T19:14:56.024Z",
+   "visto": "2026-11-12T19:14:56.024Z"
+  },
   {
    "id": "remotive-f3fbdf0eaf",
    "slug": "senior-react-full-stack-developer-lemon-io-df0eaf",
@@ -30,7 +49,7 @@
    "validoAte": "2026-12-25T14:25:05.000Z",
    "dedupKey": "47febe7f47",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-76e1646068",
@@ -49,7 +68,7 @@
    "validoAte": "2026-12-23T21:47:58.000Z",
    "dedupKey": "e2a063be20",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-55aa30fabd",
@@ -68,7 +87,7 @@
    "validoAte": "2026-12-22T01:10:55.000Z",
    "dedupKey": "9c3c08e4c6",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-0592466abb",
@@ -87,7 +106,7 @@
    "validoAte": "2026-12-21T08:51:01.000Z",
    "dedupKey": "aaa12af8b4",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-4a970a83e9",
@@ -106,7 +125,7 @@
    "validoAte": "2026-12-19T16:53:35.000Z",
    "dedupKey": "a70dc0b431",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-96d30b74eb",
@@ -125,7 +144,7 @@
    "validoAte": "2026-12-19T13:39:06.000Z",
    "dedupKey": "1c187d7e3b",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-9a224f3a9a",
@@ -144,7 +163,7 @@
    "validoAte": "2026-12-17T20:01:00.000Z",
    "dedupKey": "13890bdf0b",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-b13d0c517e",
@@ -163,7 +182,7 @@
    "validoAte": "2026-12-13T18:22:41.000Z",
    "dedupKey": "2273a77bdc",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-42d7e105aa",
@@ -182,7 +201,7 @@
    "validoAte": "2026-12-11T12:56:13.000Z",
    "dedupKey": "fa6cfe84d7",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-6293b09120",
@@ -201,7 +220,7 @@
    "validoAte": "2026-12-10T12:20:09.000Z",
    "dedupKey": "61ceae2c78",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-cd0039514a",
@@ -220,7 +239,7 @@
    "validoAte": "2026-12-06T18:40:19.000Z",
    "dedupKey": "22d9bacb1b",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-f702ff4143",
@@ -239,7 +258,7 @@
    "validoAte": "2026-12-01T16:04:29.000Z",
    "dedupKey": "e1fae66512",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   },
   {
    "id": "remotive-a895bba78b",
@@ -258,26 +277,7 @@
    "validoAte": "2026-11-28T20:33:44.000Z",
    "dedupKey": "a006b4b5aa",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
-  },
-  {
-   "id": "remotive-985f324e8b",
-   "slug": "remote-office-assistant-coalition-technologies-324e8b",
-   "titulo": "Remote Office Assistant",
-   "empresa": "Coalition Technologies",
-   "local": "Worldwide",
-   "pais": "Remoto",
-   "remoto": true,
-   "tipo": "Tempo inteiro",
-   "categoria": "vendas-marketing",
-   "resumo": "Coalition Technologies is seeking a reliable, detail-oriented, and highly organized Remote Office Assistant to support administrative, bookkeeping, billing, reporting, data entry, and internal operations tasks. This role is ideal for someone with strong communication skills, discretion, attention…",
-   "urlOriginal": "https://remotive.com/remote-jobs/marketing/remote-office-assistant-1680495",
-   "fonte": "remotive",
-   "dataPublicacao": "2026-10-11T20:17:27.000Z",
-   "validoAte": "2026-11-25T20:17:27.000Z",
-   "dedupKey": "cece89e27e",
-   "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-12T13:32:32.466Z"
+   "visto": "2026-11-12T19:14:56.024Z"
   }
  ]
 }
