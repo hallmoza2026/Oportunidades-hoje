@@ -1,18 +1,56 @@
 {
  "meta": {
-  "geradoEm": "2026-11-13T13:28:52.635Z",
+  "geradoEm": "2026-11-13T19:14:30.018Z",
   "exemplo": false,
-  "total": 14,
+  "total": 16,
   "fontes": {
    "remotive": {
-    "ultimaConsulta": "2026-11-13T13:28:52.635Z"
+    "ultimaConsulta": "2026-11-13T19:14:30.018Z"
    },
    "manual": {
-    "ultimaConsulta": "2026-11-13T13:28:52.635Z"
+    "ultimaConsulta": "2026-11-13T19:14:30.018Z"
    }
   }
  },
  "jobs": [
+  {
+   "id": "remotive-985f324e8b",
+   "slug": "remote-office-assistant-coalition-technologies-324e8b",
+   "titulo": "Remote Office Assistant",
+   "empresa": "Coalition Technologies",
+   "local": "Worldwide",
+   "pais": "Remoto",
+   "remoto": true,
+   "tipo": "Tempo inteiro",
+   "categoria": "vendas-marketing",
+   "resumo": "Coalition Technologies is seeking a reliable, detail-oriented, and highly organized Remote Office Assistant to support administrative, bookkeeping, billing, reporting, data entry, and internal operations tasks. This role is ideal for someone with strong communication skills, discretion, attention…",
+   "urlOriginal": "https://remotive.com/remote-jobs/marketing/remote-office-assistant-1680495",
+   "fonte": "remotive",
+   "dataPublicacao": "2026-11-11T20:17:48.000Z",
+   "validoAte": "2026-12-26T20:17:48.000Z",
+   "dedupKey": "cece89e27e",
+   "primeiraVez": "2026-11-13T19:14:30.018Z",
+   "visto": "2026-11-13T19:14:30.018Z"
+  },
+  {
+   "id": "remotive-1ecfe37602",
+   "slug": "senior-data-engineer-lemon-io-e37602",
+   "titulo": "Senior Data Engineer",
+   "empresa": "Lemon.io",
+   "local": "LATAM, Europe, USA, Canada, APAC",
+   "pais": "Remoto",
+   "remoto": true,
+   "tipo": "Tempo inteiro",
+   "categoria": "tecnologia",
+   "resumo": "Lemon.io helps companies in the US and Europe hire experienced engineers, from funded startups to teams like Klarna, Retool, and Pinterest. We’ve been doing this since 2015, and more than 1,500 companies have hired engineers through us. New roles for Senior React Full-stack Engineers come in all…",
+   "urlOriginal": "https://remotive.com/remote-jobs/data/senior-data-engineer-2091137",
+   "fonte": "remotive",
+   "dataPublicacao": "2026-11-11T18:39:59.000Z",
+   "validoAte": "2026-12-26T18:39:59.000Z",
+   "dedupKey": "8b55fe5be3",
+   "primeiraVez": "2026-11-13T19:14:30.018Z",
+   "visto": "2026-11-13T19:14:30.018Z"
+  },
   {
    "id": "remotive-ddadc5e023",
    "slug": "customer-service-representative-shyftoff-c5e023",
@@ -30,7 +68,7 @@
    "validoAte": "2026-12-26T09:11:58.000Z",
    "dedupKey": "00b885ae49",
    "primeiraVez": "2026-11-12T19:14:56.024Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-f3fbdf0eaf",
@@ -49,7 +87,7 @@
    "validoAte": "2026-12-25T14:25:05.000Z",
    "dedupKey": "47febe7f47",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-76e1646068",
@@ -68,7 +106,7 @@
    "validoAte": "2026-12-23T21:47:58.000Z",
    "dedupKey": "e2a063be20",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-55aa30fabd",
@@ -87,7 +125,7 @@
    "validoAte": "2026-12-22T01:10:55.000Z",
    "dedupKey": "9c3c08e4c6",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-0592466abb",
@@ -106,7 +144,7 @@
    "validoAte": "2026-12-21T08:51:01.000Z",
    "dedupKey": "aaa12af8b4",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-4a970a83e9",
@@ -125,7 +163,7 @@
    "validoAte": "2026-12-19T16:53:35.000Z",
    "dedupKey": "a70dc0b431",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-96d30b74eb",
@@ -144,7 +182,7 @@
    "validoAte": "2026-12-19T13:39:06.000Z",
    "dedupKey": "1c187d7e3b",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-9a224f3a9a",
@@ -163,7 +201,7 @@
    "validoAte": "2026-12-17T20:01:00.000Z",
    "dedupKey": "13890bdf0b",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-b13d0c517e",
@@ -182,7 +220,7 @@
    "validoAte": "2026-12-13T18:22:41.000Z",
    "dedupKey": "2273a77bdc",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-42d7e105aa",
@@ -201,7 +239,7 @@
    "validoAte": "2026-12-11T12:56:13.000Z",
    "dedupKey": "fa6cfe84d7",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-6293b09120",
@@ -220,7 +258,7 @@
    "validoAte": "2026-12-10T12:20:09.000Z",
    "dedupKey": "61ceae2c78",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-cd0039514a",
@@ -239,7 +277,7 @@
    "validoAte": "2026-12-06T18:40:19.000Z",
    "dedupKey": "22d9bacb1b",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-f702ff4143",
@@ -258,7 +296,7 @@
    "validoAte": "2026-12-01T16:04:29.000Z",
    "dedupKey": "e1fae66512",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   },
   {
    "id": "remotive-a895bba78b",
@@ -277,7 +315,7 @@
    "validoAte": "2026-11-28T20:33:44.000Z",
    "dedupKey": "a006b4b5aa",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-13T13:28:52.635Z"
+   "visto": "2026-11-13T19:14:30.018Z"
   }
  ]
 }
