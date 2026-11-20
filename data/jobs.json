@@ -1,18 +1,37 @@
 {
  "meta": {
-  "geradoEm": "2026-11-20T13:31:33.883Z",
+  "geradoEm": "2026-11-20T19:21:09.309Z",
   "exemplo": false,
   "total": 15,
   "fontes": {
    "remotive": {
-    "ultimaConsulta": "2026-11-20T13:31:33.883Z"
+    "ultimaConsulta": "2026-11-20T19:21:09.309Z"
    },
    "manual": {
-    "ultimaConsulta": "2026-11-20T13:31:33.883Z"
+    "ultimaConsulta": "2026-11-20T19:21:09.309Z"
    }
   }
  },
  "jobs": [
+  {
+   "id": "remotive-48765f788a",
+   "slug": "content-reviewer-united-states-telus-digital-5f788a",
+   "titulo": "Content Reviewer - United States",
+   "empresa": "TELUS Digital",
+   "local": "USA",
+   "pais": "Remoto",
+   "remoto": true,
+   "tipo": "Tempo parcial",
+   "categoria": "vendas-marketing",
+   "resumo": "Every search represents someone seeking reliable information. They depend on search results being accurate, trustworthy, and relevant to their local context. But search engines only learn to return trustworthy information if human evaluators with deep research expertise and cultural knowledge…",
+   "urlOriginal": "https://remotive.com/remote-jobs/all-others/content-reviewer-united-states-2091177",
+   "fonte": "remotive",
+   "dataPublicacao": "2026-11-19T14:58:42.000Z",
+   "validoAte": "2027-01-03T14:58:42.000Z",
+   "dedupKey": "1c187d7e3b",
+   "primeiraVez": "2026-11-20T19:21:09.309Z",
+   "visto": "2026-11-20T19:21:09.309Z"
+  },
   {
    "id": "remotive-a895bba78b",
    "slug": "tech-lead-full-stack-rails-engineer-mitre-media-bba78b",
@@ -30,7 +49,7 @@
    "validoAte": "2026-12-29T20:33:53.000Z",
    "dedupKey": "a006b4b5aa",
    "primeiraVez": "2026-11-16T15:26:02.153Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-95a74f5dc6",
@@ -49,7 +68,7 @@
    "validoAte": "2026-12-28T17:29:57.000Z",
    "dedupKey": "2f1a7548f2",
    "primeiraVez": "2026-11-15T19:03:42.021Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-985f324e8b",
@@ -68,7 +87,7 @@
    "validoAte": "2026-12-26T20:17:48.000Z",
    "dedupKey": "cece89e27e",
    "primeiraVez": "2026-11-13T19:14:30.018Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-1ecfe37602",
@@ -87,7 +106,7 @@
    "validoAte": "2026-12-26T18:39:59.000Z",
    "dedupKey": "8b55fe5be3",
    "primeiraVez": "2026-11-13T19:14:30.018Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-ddadc5e023",
@@ -99,14 +118,14 @@
    "remoto": true,
    "tipo": "Contrato",
    "categoria": "vendas-marketing",
-   "resumo": "ShyftOff connects independent customer service professionals with opportunities to support leading brands across industries like healthcare, financial services, insurance, retail, and technology. As an independent agent on the ShyftOff platform, you'll have opportunities to help customers answer…",
+   "resumo": "Work From Home. Pick Your Schedule. Get Paid Weekly. Welcome to ShyftOff! Tired of traditional jobs that expect you to build your life around a fixed schedule? At ShyftOff, we believe work should fit into your life, not the other way around! We're changing the way customer service works by…",
    "urlOriginal": "https://remotive.com/remote-jobs/customer-service/customer-service-representative-2091171",
    "fonte": "remotive",
    "dataPublicacao": "2026-11-11T09:11:58.000Z",
    "validoAte": "2026-12-26T09:11:58.000Z",
    "dedupKey": "00b885ae49",
    "primeiraVez": "2026-11-12T19:14:56.024Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-f3fbdf0eaf",
@@ -125,7 +144,7 @@
    "validoAte": "2026-12-25T14:25:05.000Z",
    "dedupKey": "47febe7f47",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-76e1646068",
@@ -144,7 +163,7 @@
    "validoAte": "2026-12-23T21:47:58.000Z",
    "dedupKey": "e2a063be20",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-55aa30fabd",
@@ -163,7 +182,7 @@
    "validoAte": "2026-12-22T01:10:55.000Z",
    "dedupKey": "9c3c08e4c6",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-0592466abb",
@@ -182,7 +201,7 @@
    "validoAte": "2026-12-21T08:51:01.000Z",
    "dedupKey": "aaa12af8b4",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-4a970a83e9",
@@ -201,26 +220,7 @@
    "validoAte": "2026-12-19T16:53:35.000Z",
    "dedupKey": "a70dc0b431",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-20T13:31:33.883Z"
-  },
-  {
-   "id": "remotive-96d30b74eb",
-   "slug": "content-reviewer-united-states-telus-digital-0b74eb",
-   "titulo": "Content Reviewer - United States",
-   "empresa": "TELUS Digital",
-   "local": "USA",
-   "pais": "Remoto",
-   "remoto": true,
-   "tipo": "Tempo parcial",
-   "categoria": "vendas-marketing",
-   "resumo": "We are looking for an independent, flexible, remote opportunity where you can help improve AI-powered search technology from the comfort of your home? If you're curious, internet-savvy, and enjoy evaluating online content, this freelance project could be a great fit. A Day in the Life of a Content…",
-   "urlOriginal": "https://remotive.com/remote-jobs/all-others/content-reviewer-united-states-2091166",
-   "fonte": "remotive",
-   "dataPublicacao": "2026-11-04T13:39:06.000Z",
-   "validoAte": "2026-12-19T13:39:06.000Z",
-   "dedupKey": "1c187d7e3b",
-   "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-9a224f3a9a",
@@ -239,7 +239,7 @@
    "validoAte": "2026-12-17T20:01:00.000Z",
    "dedupKey": "13890bdf0b",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-b13d0c517e",
@@ -258,7 +258,7 @@
    "validoAte": "2026-12-13T18:22:41.000Z",
    "dedupKey": "2273a77bdc",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-42d7e105aa",
@@ -277,7 +277,7 @@
    "validoAte": "2026-12-11T12:56:13.000Z",
    "dedupKey": "fa6cfe84d7",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   },
   {
    "id": "remotive-cd0039514a",
@@ -296,7 +296,7 @@
    "validoAte": "2026-12-06T18:40:19.000Z",
    "dedupKey": "22d9bacb1b",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-20T13:31:33.883Z"
+   "visto": "2026-11-20T19:21:09.309Z"
   }
  ]
 }
