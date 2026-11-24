@@ -1,14 +1,14 @@
 {
  "meta": {
-  "geradoEm": "2026-11-23T19:20:22.942Z",
+  "geradoEm": "2026-11-24T01:33:48.027Z",
   "exemplo": false,
-  "total": 15,
+  "total": 14,
   "fontes": {
    "remotive": {
-    "ultimaConsulta": "2026-11-23T13:40:49.167Z"
+    "ultimaConsulta": "2026-11-24T01:33:48.027Z"
    },
    "manual": {
-    "ultimaConsulta": "2026-11-23T19:20:22.942Z"
+    "ultimaConsulta": "2026-11-24T01:33:48.027Z"
    }
   }
  },
@@ -30,7 +30,7 @@
    "validoAte": "2027-01-03T14:58:42.000Z",
    "dedupKey": "1c187d7e3b",
    "primeiraVez": "2026-11-20T19:21:09.309Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-a895bba78b",
@@ -49,7 +49,7 @@
    "validoAte": "2026-12-29T20:33:53.000Z",
    "dedupKey": "a006b4b5aa",
    "primeiraVez": "2026-11-16T15:26:02.153Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-95a74f5dc6",
@@ -68,7 +68,7 @@
    "validoAte": "2026-12-28T17:29:57.000Z",
    "dedupKey": "2f1a7548f2",
    "primeiraVez": "2026-11-15T19:03:42.021Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-985f324e8b",
@@ -87,7 +87,7 @@
    "validoAte": "2026-12-26T20:17:48.000Z",
    "dedupKey": "cece89e27e",
    "primeiraVez": "2026-11-13T19:14:30.018Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-1ecfe37602",
@@ -106,7 +106,7 @@
    "validoAte": "2026-12-26T18:39:59.000Z",
    "dedupKey": "8b55fe5be3",
    "primeiraVez": "2026-11-13T19:14:30.018Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-ddadc5e023",
@@ -125,7 +125,7 @@
    "validoAte": "2026-12-26T09:11:58.000Z",
    "dedupKey": "00b885ae49",
    "primeiraVez": "2026-11-12T19:14:56.024Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-f3fbdf0eaf",
@@ -144,7 +144,7 @@
    "validoAte": "2026-12-25T14:25:05.000Z",
    "dedupKey": "47febe7f47",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-76e1646068",
@@ -163,7 +163,7 @@
    "validoAte": "2026-12-23T21:47:58.000Z",
    "dedupKey": "e2a063be20",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-55aa30fabd",
@@ -182,7 +182,7 @@
    "validoAte": "2026-12-22T01:10:55.000Z",
    "dedupKey": "9c3c08e4c6",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-0592466abb",
@@ -201,7 +201,7 @@
    "validoAte": "2026-12-21T08:51:01.000Z",
    "dedupKey": "aaa12af8b4",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-4a970a83e9",
@@ -220,7 +220,7 @@
    "validoAte": "2026-12-19T16:53:35.000Z",
    "dedupKey": "a70dc0b431",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-9a224f3a9a",
@@ -239,7 +239,7 @@
    "validoAte": "2026-12-17T20:01:00.000Z",
    "dedupKey": "13890bdf0b",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-b13d0c517e",
@@ -258,12 +258,12 @@
    "validoAte": "2026-12-13T18:22:41.000Z",
    "dedupKey": "2273a77bdc",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   },
   {
    "id": "remotive-42d7e105aa",
-   "slug": "senior-back-end-developer-lemon-io-e105aa",
-   "titulo": "Senior Back-end Developer",
+   "slug": "senior-back-end-developerusa-lemon-io-e105aa",
+   "titulo": "Senior Back-end Developerusa",
    "empresa": "Lemon.io",
    "local": "Europe, USA, Canada, Australia, Singapore, Mexico, Saudi Arabia",
    "pais": "Remoto",
@@ -271,32 +271,13 @@
    "tipo": "Tempo inteiro",
    "categoria": "tecnologia",
    "resumo": "Lemon.io helps companies in the US and Europe hire experienced engineers, from funded startups to teams like Klarna, Retool, and Pinterest. We’ve been doing this since 2015, and more than 1,500 companies have hired engineers through us. Currently, we have a few open positions from our client, an…",
-   "urlOriginal": "https://remotive.com/remote-jobs/software-development/senior-back-end-developer-2091135",
+   "urlOriginal": "https://remotive.com/remote-jobs/software-development/senior-back-end-developerusa-2091135",
    "fonte": "remotive",
    "dataPublicacao": "2026-10-27T12:56:13.000Z",
    "validoAte": "2026-12-11T12:56:13.000Z",
-   "dedupKey": "fa6cfe84d7",
+   "dedupKey": "ecc96276fe",
    "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-23T13:40:49.167Z"
-  },
-  {
-   "id": "remotive-cd0039514a",
-   "slug": "ai-trainer-video-annotation-imerit-technology-39514a",
-   "titulo": "AI Trainer - Video Annotation",
-   "empresa": "iMerit Technology",
-   "local": "Worldwide",
-   "pais": "Remoto",
-   "remoto": true,
-   "tipo": "Freelance",
-   "categoria": "outras",
-   "resumo": "AI Trainer - Video Annotation Remote | Independent Contractor Prove your skills. Get certified. Robotics AI is advancing rapidly, and high-quality video data helps intelligent systems better understand the world around them. We are inviting detail-oriented professionals to complete our…",
-   "urlOriginal": "https://remotive.com/remote-jobs/artificial-intelligence/ai-trainer-video-annotation-2091161",
-   "fonte": "remotive",
-   "dataPublicacao": "2026-10-22T18:40:19.000Z",
-   "validoAte": "2026-12-06T18:40:19.000Z",
-   "dedupKey": "22d9bacb1b",
-   "primeiraVez": "2026-11-12T07:38:22.537Z",
-   "visto": "2026-11-23T13:40:49.167Z"
+   "visto": "2026-11-24T01:33:48.027Z"
   }
  ]
 }
